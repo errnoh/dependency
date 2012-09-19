@@ -1,4 +1,4 @@
-// Dependency inejction library
+// Dependency injection library
 //
 // Workflow:
 // Tell where to read the config file with SetConfig()
