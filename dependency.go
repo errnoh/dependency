@@ -13,7 +13,6 @@ package dependency
 import (
 	"bufio"
 	"errors"
-	"fmt"
 	"io"
 	"io/ioutil"
 	"strings"
@@ -59,7 +58,7 @@ func Get(category string) (interface{}, error) {
 
 	if len(deps[category]) == 1 {
 		for _, constructor := range deps[category] {
-			constructor()
+			return constructor()
 		}
 	}
 
